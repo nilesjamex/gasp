@@ -22,6 +22,12 @@ html, body {
   padding: 0;
   box-sizing: border-box;
 }
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
