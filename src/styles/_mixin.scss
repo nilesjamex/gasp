@@ -1,0 +1,11 @@
+@import './variables';
+
+@mixin big-font {
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 477px;
+    line-height: 652px;
+    color: $white;
+
+}
