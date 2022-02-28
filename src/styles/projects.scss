@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     height: 1024px;
+    position: relative;
     h1 {
         font-family: $manrope;
         font-style: normal;
@@ -11,17 +12,17 @@
         line-height: 652px;
         text-align: center;
         color: $white;
-         position: absolute !important;
+         position: absolute;
 
         span {
-            position: absolute !important;
+            position: absolute;
             z-index: 3;
     }
     }
     .projects--image {
-        position: absolute !important;
-        top: 23rem;
-        right: 30rem;
+        position: absolute;
+        top: 13rem;
+        right: 25rem;
         z-index: 1;
     }
 }
