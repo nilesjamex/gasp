@@ -1,4 +1,4 @@
-0.7<template>
+<template>
 <div class="hero">
     <nav class="hero--nav">
         <ul class="hero--nav--list">
@@ -22,10 +22,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 @import '@/Styles/_variables.scss';
 .hero {
-    padding: 2rem 4rem;
+    padding: 2rem 6rem;
 
     .hero--nav--list {
         color: $gray;
