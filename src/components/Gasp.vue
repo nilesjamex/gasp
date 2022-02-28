@@ -1,9 +1,9 @@
 <template>
         <div class="projects--text">
         <h1>
-           FO<span>RM</span>
+           GA<span>SP</span>
         </h1>
-        <img class="projects--image" src="@/assets/Images/form.png" alt="">
+        <img class="projects--image" src="@/assets/Images/gasp.png" alt="">
     </div>
 </template>
 
