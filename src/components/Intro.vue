@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/Styles/breakpoints.scss';
 @import '@/Styles/_variables.scss';
 .hero {
     padding: 2rem 6rem;
@@ -48,6 +49,11 @@ export default {
 
     &:hover {
         color: $gray;
+    }
+}
+@include lg {
+    .hero--text {
+        display: none;
     }
 }
 </style>
