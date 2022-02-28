@@ -3,7 +3,7 @@
         <h1>
            CO<span>DE</span>
         </h1>
-        <img class="projects--image" src="@/assets/Images/form.png" alt="">
+        <img class="projects--image" src="@/assets/Images/code.png" alt="">
     </div>
 </template>
 
