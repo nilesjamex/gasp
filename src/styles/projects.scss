@@ -1,0 +1,27 @@
+@import '@/Styles/_variables.scss';
+.projects--text {
+    display: flex;
+    align-items: center;
+    height: 1024px;
+    h1 {
+        font-family: $manrope;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 477px;
+        line-height: 652px;
+        text-align: center;
+        color: $white;
+         position: absolute !important;
+
+        span {
+            position: absolute !important;
+            z-index: 3;
+    }
+    }
+    .projects--image {
+        position: absolute !important;
+        top: 23rem;
+        right: 30rem;
+        z-index: 1;
+    }
+}
