@@ -3,7 +3,7 @@
         <h1>
            BU<span>SH</span>
         </h1>
-        <img class="projects--image" src="@/assets/Images/form.png" alt="">
+        <img class="projects--image" src="@/assets/Images/bush.png" alt="">
     </div>
 </template>
 
