@@ -1,0 +1,38 @@
+@import './variables';
+
+//extra small scrren
+@mixin xs {
+    @media (max-width: map-get($breakpoints, "xs")) {
+        @content
+    }
+};
+// small screen
+@mixin lg {
+    @media (max-width: map-get($breakpoints, "lg")) {
+        @content
+    }
+};
+// medium screen
+@mixin md {
+    @media (max-width: map-get($breakpoints, "md")) {
+        @content
+    }
+};
+// large screen
+@mixin lg {
+    @media (max-width: map-get($breakpoints, "lg")) {
+        @content
+    }
+};
+// extra large screen
+@mixin xl {
+    @media (max-width: map-get($breakpoints, "xl")) {
+        @content
+    }
+};
+// set width yourself
+@mixin breakpoint($bp) {
+    @media (max-width: $bp) {
+        @content
+    }
+};
