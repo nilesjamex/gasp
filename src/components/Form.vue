@@ -1,7 +1,7 @@
 <template>
         <div class="projects--text">
         <h1>
-           GA<span>SP</span>
+           FO<span>RM</span>
         </h1>
         <img class="projects--image" src="@/assets/Images/form.png" alt="">
     </div>
