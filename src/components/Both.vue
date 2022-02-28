@@ -3,7 +3,7 @@
         <h1>
            BO<span>TH</span>
         </h1>
-        <img class="projects--image" src="@/assets/Images/form.png" alt="">
+        <img class="projects--image" src="@/assets/Images/both.png" alt="">
     </div>
 </template>
 
