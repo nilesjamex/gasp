@@ -8,19 +8,28 @@
         <li>CONTACT US</li>
       </ul>
     </nav>
-    <div v-for="link in links" :key="link.id">
-       <div class="projects--text">
-        <h1>
-          {{ link.text1 }}<span>{{ link.text2 }}</span>
-        </h1>
-        <img class="projects--image" :src="link.image" alt="" style="width:100%">
-    </div>
-    </div>
+    <Form />
+    <Gasp />
+    <Both />
+    <Bush />
+    <Code />
   </div>
 </template>
 
 <script>
+import Gasp from "./Gasp.vue"
+import Form from "./Form.vue"
+import Both from "./Both.vue"
+import Bush from "./Bush.vue"
+import Code from "./Code.vue"
 export default {
+  components: {
+    Gasp,
+    Form,
+    Both,
+    Bush,
+    Code
+  },
   data() {
     return {
       links: [
@@ -28,31 +37,31 @@ export default {
           id: 1,
           text1: 'FO',
           text2: 'RM',
-          image: './assets/Image/form.png'
+          image: "https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png"
         },
         {
           id: 2,
           text1: 'GA',
           text2: 'SP',
-          image: '@/assets/Image/form.png'
+          image: "https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png"
         },
         {
           id: 3,
           text1: 'BU',
           text2: 'SH',
-          image: '@/assets/Image/form.png'
+          image: 'https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png'
         },
          {
           id: 4,
           text1: 'BO',
           text2: 'TH',
-          image: '@/assets/Image/form.png'
+          image: 'https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png'
         },
          {
           id: 5,
           text1: 'CO',
           text2: 'DE',
-          image: '@/assets/Image/form.png'
+          image: 'https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png'
         },
       ]
     }
