@@ -31,5 +31,9 @@ a {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
 }
 </style>
