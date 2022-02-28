@@ -2,7 +2,7 @@
  <Intro />
  <Projects />
  <About />
- <Contact />
+ <Contact /> 
 </template>
 
 <script>
