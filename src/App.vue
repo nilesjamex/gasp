@@ -1,8 +1,11 @@
 <template>
   <div id="nav">
-
+    <router-view v-slot="{ Component }">
+    <transition name="route" mode="out-in" appear>
+      <component :is="Component" />
+    </transition>
+  </router-view>
   </div>
-  <router-view/>
 </template>
 
 <script>
@@ -35,5 +38,21 @@ a {
     &::-webkit-scrollbar {
       width: 5px;
     }
+}
+
+/* route transition */
+.route-enter-from {
+  opacity: 0;
+  transform: translateX(300px);
+}
+.route-enter-active {
+  transition: all 1s ease-out;
+}
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+.route-leave-active {
+  transition: all 1s ease-in;
 }
 </style>
