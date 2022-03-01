@@ -1,8 +1,10 @@
 <template>
+<div>
  <Intro />
  <Projects />
  <About />
  <Contact /> 
+ </div>
 </template>
 
 <script>
