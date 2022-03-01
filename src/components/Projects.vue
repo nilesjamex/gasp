@@ -8,7 +8,9 @@
         <li>CONTACT US</li>
       </ul>
     </nav>
+    <router-link to="/form">
     <Form />
+    </router-link>
     <Gasp />
     <Both />
     <Bush />

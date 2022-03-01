@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/Styles/breakpoints.scss';
+@import '@/Styles/_breakpoints.scss';
 @import '@/Styles/_variables.scss';
 .hero {
     padding: 2rem 6rem;
