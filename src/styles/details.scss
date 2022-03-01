@@ -1,0 +1,87 @@
+@import "@/Styles/_variables.scss";
+.details {
+    margin: 0 auto;
+    padding: 1rem 10rem;
+}
+.details--intro {
+    display: flex;
+    align-items: center;
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+
+    .details--intro--text {
+        h1 {
+            font-family: $manrope;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 288px;
+            line-height: 393px;
+            color: $white;
+        }
+    }
+    .details--intro--sub {
+        /* align-self: flex-end; */
+        padding-top: 9rem;
+        h4 {
+            font-family: $helvetica;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: $gray;
+
+        }
+    }
+}
+.details--projects {
+    .details--projects--description {
+        margin-top: 2rem;
+        h1 {
+            font-family: $manrope;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 144px;
+            line-height: 118.6%;
+            text-transform: uppercase;
+            color: $dark;
+        }
+    }
+    .details--projects--text {
+        width: 720px;
+        margin-bottom: 4rem;
+        h5 {
+            font-family: $helvetica;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: $number;
+        }
+    }
+}
+.details--project--image  {
+    img:nth-child(2) {
+        margin-left: 0.4rem;
+    }
+}
+.details--other--project {
+    h1 {
+    margin-top: 2rem;
+    font-family: $manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 144px;
+    line-height: 171px;
+    text-transform: uppercase;
+    color: $dark;
+    width: 1231px;
+    height: 343px;
+    transition: all 0.8s ease-in-out;
+
+    &:hover {
+        color: $gray;
+    }
+    }
+}
