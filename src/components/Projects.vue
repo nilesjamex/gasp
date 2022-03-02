@@ -11,10 +11,18 @@
     <router-link to="/form">
     <Form />
     </router-link>
-    <Gasp />
-    <Both />
-    <Bush />
-    <Code />
+    <router-link to="/gasp">
+       <Gasp />
+    </router-link>
+    <router-link to="/both">
+      <Both />
+    </router-link>
+    <router-link to="/bush">
+      <Bush />
+    </router-link>
+    <router-link to="/code">
+      <Code />
+    </router-link>
   </div>
 </template>
 
@@ -31,42 +39,6 @@ export default {
     Both,
     Bush,
     Code
-  },
-  data() {
-    return {
-      links: [
-         {
-          id: 1,
-          text1: 'FO',
-          text2: 'RM',
-          image: "https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png"
-        },
-        {
-          id: 2,
-          text1: 'GA',
-          text2: 'SP',
-          image: "https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png"
-        },
-        {
-          id: 3,
-          text1: 'BU',
-          text2: 'SH',
-          image: 'https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png'
-        },
-         {
-          id: 4,
-          text1: 'BO',
-          text2: 'TH',
-          image: 'https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png'
-        },
-         {
-          id: 5,
-          text1: 'CO',
-          text2: 'DE',
-          image: 'https://github.com/nilesjamex/gasp/blob/adeabb73679cea9f92c8d485d5e5802c8a0ecf11/src/assets/Images/form.png'
-        },
-      ]
-    }
   }
 };
 </script>
