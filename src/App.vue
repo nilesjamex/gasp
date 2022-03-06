@@ -41,18 +41,16 @@ a {
 }
 
 /* route transition */
-.route-enter-from {
+  .route-enter-from {
   opacity: 0;
-  transform: translateX(300px);
 }
 .route-enter-active {
-  transition: all 1s ease-out;
+  transition: all 0.7s;
 }
 .route-leave-to {
   opacity: 0;
-  transform: translateX(-300px);
 }
 .route-leave-active {
-  transition: all 1s ease-in;
-}
+  transition: all 0.7s;
+}  
 </style>
