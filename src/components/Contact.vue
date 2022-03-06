@@ -5,7 +5,7 @@
             <li>HOME</li>
             <li>WORKS</li>
             <li>ABOUT US</li>
-            <li>CONTACT US</li>
+            <li class="contact--nav--list1" >CONTACT US</li>
         </ul>
     </nav>
     <div class="contact--text">
@@ -15,16 +15,16 @@
         </h2>
     </div>
     <div class="contact--social">
-        <hr class="contact--social--line1" />
-        <ul>
+        <hr ref="line1" class="contact--social--line1" />
+        <ul ref="socials">
             <li>instagram</li>
             <li>pinterest</li>
             <li>facebook</li>
             <li>twitter</li>
         </ul>
-        <hr class="contact--social--line1" />
+        <hr ref="line2" class="contact--social--line1" />
     </div>
-    <div class="contact--footer">
+    <div ref="copyright" class="contact--footer">
         <ul>
             <li>ALL RIGHT RESERVED</li>
             <li>BUILT BY Niles</li>
@@ -35,8 +35,61 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 export default {
-
+mounted() {
+    const line1 = this.$refs.line1;
+    const socials = this.$refs.socials
+     gsap.timeline({
+            scrollTrigger: {
+                 trigger: '.contact',
+                  x: 200,
+                  end: "+=600",
+                  scrub: 'true'
+            }
+        })
+        .to('.contact--nav--list1', {
+            duration: 1,
+            css: {
+                color: '#fff'
+            }
+            })
+     gsap.timeline({scrollTrigger: {
+         trigger: '.contact--text',
+                  x: 200,
+                  end: "+=550",
+                  scrub: 'true'
+             }
+        })
+        .from('.contact--text h2', {
+            duration: 1,
+            opacity: 0,
+            y: 200,
+            delay: 0.7
+        })
+        .from(line1, {
+            duration: 1,
+            css: {
+                width: 0
+            },
+            delay: 0.7
+        })
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '.contact--social',
+                  x: 200,
+                  end: "+=210",
+                  scrub: 'true'
+            }
+        })
+        .from(socials, {
+            duration: 1,
+            opacity: 0,
+            delay: 0.7
+        })
+}
 }
 </script>
 

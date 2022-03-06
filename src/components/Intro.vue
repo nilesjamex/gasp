@@ -2,7 +2,7 @@
 <div class="hero">
     <nav class="hero--nav">
         <ul class="hero--nav--list">
-            <li>HOME</li>
+            <li class="hero--nav--list1">HOME</li>
             <li>WORKS</li>
             <li>ABOUT US</li>
             <li>CONTACT US</li>
@@ -10,14 +10,57 @@
     </nav>
     <div class="hero--text">
         <h1 class="hero--text--main">
-            We help people build their dream homes.
+           <span class="span1">
+             We help people  </span> <span class="span2">
+                build their </span> <span class="span3">
+                  dream homes.  </span> 
         </h1>
     </div>
 </div>
 </template>
 
 <script>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 export default {
+
+    mounted() {
+    gsap.timeline({
+            scrollTrigger: {
+                 trigger: '.hero',
+                  x: 200,
+                  end: "+=400",
+                  scrub: 'true'
+            }
+        })
+        .to('.hero--nav--list1', {
+            duration: 1,
+            css: {
+                color: '#fff'
+            }
+            });
+        gsap.timeline()
+        .from('.span1', {
+            duration: 1,
+            opacity: 0,
+            y: 200,
+            delay: 0.3
+        })
+        .from('.span2', {
+            duration: 1,
+            opacity: 0,
+            y: 200,
+            delay: 0.3
+        })
+        .from('.span3', {
+            duration: 1,
+            opacity: 0,
+            y: 200,
+            delay: 0.3
+        })
+        
+    }
 
 }
 </script>

@@ -4,7 +4,7 @@
       <ul class="about--nav--list">
         <li>HOME</li>
         <li>WORKS</li>
-        <li>ABOUT US</li>
+        <li class="about--nav--list1">ABOUT US</li>
         <li>CONTACT US</li>
       </ul>
     </nav>
@@ -31,7 +31,40 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger )
 export default {
+    mounted() {
+    gsap.timeline({
+            scrollTrigger: {
+                 trigger: '.about',
+                  x: 200,
+                  end: "+=600",
+                  scrub: 'true'
+            }
+        })
+        .to('.about--nav--list1', {
+            duration: 1,
+            css: {
+                color: '#fff'
+            }
+            })
+         gsap.timeline({
+            scrollTrigger: {
+                 trigger: '.about--text',
+                  x: 200,
+                  end: "+=600",
+                  scrub: 'true'
+            }
+        })
+        .from('.about--text', {
+            duration: 1,
+            y: 200,
+            opacity: 0,
+            delay: 0.3
+        })
+    },
     data() {
         return {
             testimonials: [

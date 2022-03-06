@@ -3,14 +3,12 @@
     <nav class="projects--nav">
       <ul class="projects--nav--list">
         <li>HOME</li>
-        <li>WORKS</li>
+        <li class="projects--nav--list1">WORKS</li>
         <li>ABOUT US</li>
         <li>CONTACT US</li>
       </ul>
     </nav>
-    <router-link to="/form">
     <Form />
-    </router-link>
     <router-link to="/gasp">
        <Gasp />
     </router-link>
@@ -27,6 +25,9 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 import Gasp from "./Gasp.vue"
 import Form from "./Form.vue"
 import Both from "./Both.vue"
@@ -39,7 +40,26 @@ export default {
     Both,
     Bush,
     Code
-  }
+  },
+   mounted() {
+        gsap.timeline({
+            scrollTrigger: {
+                 trigger: '.projects',
+                  x: 200,
+                  end: "+=400",
+                  scrub: 'true'
+            }
+        })
+        .to('.projects--nav--list1', {
+            duration: 1,
+            css: {
+                color: '#fff'
+            }
+            });
+        gsap.timeline()
+        
+    }
+
 };
 </script>
 
