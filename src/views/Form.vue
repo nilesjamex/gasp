@@ -1,6 +1,6 @@
 <template>
 <div>
-  <Nav />
+  <Nav class="nav" />
   <div class="details">
       <div class="details--intro">
           <div class="details--intro--text">
@@ -71,19 +71,29 @@ components: {
     Code
 },
  mounted() {
-    //  gsap.timeline()
-    //  .from('.details--intro--text h1', {
-    //      duration: 2,
-    //      css: {
-    //          fontStyle: 'normal',
-    //          fontWeight: 800,
-    //          fontSize: '477px',
-    //          lineHeight: '652px',
-    //          textAlign: 'center',
-    //          scale: 1.6
-    //           },
-    //           delay: 0.5
-    //  }),
+     gsap.timeline()
+     .from('.details--intro--text h1', {
+         duration: 1,
+         opacity: 0,
+         delay: 0.5
+     })
+     .from('.nav', {
+         duration: 1,
+         opacity: 0,
+         y: -200,
+         delay: 0.3
+     })
+     .from(".details--intro--sub", {
+         duration: 1,
+         opacity: 0,
+         x: 100,
+         delay: 0.5
+     })
+     .from(".details--image", {
+         duration: 1,
+         opacity: 0,
+         delay: 0.5
+     }),
      window.scrollTo(0,0)
  }
 }
