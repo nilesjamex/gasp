@@ -115,7 +115,7 @@ mounted() {
         font-family: $manrope;
         font-style: normal;
         font-weight: 800;
-        font-size: 120px;
+        font-size: 7rem;
         line-height: 164px;
         letter-spacing: 0.02em;
         text-transform: uppercase;
@@ -136,7 +136,7 @@ mounted() {
             font-family: $helvetica;
             font-style: normal;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 19px;
             letter-spacing: 0.02em;
             color: $white;
@@ -153,7 +153,7 @@ mounted() {
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1rem;
         letter-spacing: 0.02em;
         color: $number;
         text-transform: uppercase;

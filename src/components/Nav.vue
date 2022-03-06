@@ -38,7 +38,7 @@ nav {
         font-family: $helvetica;
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 19px;
         color: $gray;
         cursor: pointer;

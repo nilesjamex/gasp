@@ -108,7 +108,7 @@ export default {
         font-family: $manrope;
         font-style: normal;
         font-weight: 800;
-        font-size: 64px;
+        font-size: 4rem;
         line-height: 96px;
         /* or 150% */
         letter-spacing: 0.02em;
@@ -123,7 +123,7 @@ export default {
     font-family: $helvetica;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 56px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
