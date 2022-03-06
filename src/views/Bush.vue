@@ -5,7 +5,7 @@
       <div class="details--intro">
           <div class="details--intro--text">
               <h1>
-                  FORM
+                  BUSH
               </h1>
           </div>
           <div class="details--intro--sub">
@@ -65,7 +65,10 @@ components: {
     Bush,
     Both,
     Code
-}
+},
+ mounted() {
+     window.scrollTo(0,0)
+ }
 }
 </script>
 

@@ -21,6 +21,9 @@ export default {
     Projects,
     About,
     Contact
+  },
+  mounted() {
+    window.scrollTo(0,0)
   }
 }
 </script>

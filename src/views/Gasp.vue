@@ -5,7 +5,7 @@
       <div class="details--intro">
           <div class="details--intro--text">
               <h1>
-                  FORM
+                  GASP
               </h1>
           </div>
           <div class="details--intro--sub">
@@ -18,7 +18,7 @@
           </div>
       </div>
       <div class="details--image">
-          <img src="@/assets/Details/form.png" alt="">
+          <img src="@/assets/Details/gasp/gasp.png" alt="">
       </div>
       <div class="details--projects">
           <div class="details--projects--description">
@@ -34,8 +34,8 @@
               </h5>
           </div>
           <div class="details--project--image">
-              <img src="@/assets/Details/big-white.png" alt="">
-              <img src="@/assets/Details/small-white.png" alt="">
+              <img src="@/assets/Details/gasp/big.png" alt="">
+              <img src="@/assets/Details/gasp/small.png" alt="">
               <img src="@/assets/Details/stairs.png" alt="">
           </div>
       </div>
@@ -44,7 +44,7 @@
               other projects
           </h1>
       </div>
-      <Gasp />
+      <Form />
       <Bush />
       <Both />
       <Code />
@@ -54,17 +54,20 @@
 
 <script>
 import Nav from "../components/Nav.vue"
-import Gasp from "../components/Projects/Gasp.vue"
+import Form from "../components/Projects/FormL.vue"
 import Bush from "../components/Projects/Bush.vue"
 import Both from "../components/Projects/Both.vue"
 import Code from "../components/Projects/Code.vue"
 export default {
 components: {
     Nav,
-    Gasp,
+    Form,
     Bush,
     Both,
     Code
+},
+mounted() {
+    window.scrollTo(0,0)
 }
 }
 </script>

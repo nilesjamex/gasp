@@ -36,7 +36,7 @@
           <div class="details--project--image">
               <img src="@/assets/Details/big-white.png" alt="">
               <img src="@/assets/Details/small-white.png" alt="">
-              <img src="@/assets/Details/stairs.png" alt="">
+              <img src="@/assets/Details/gasp/room.png" alt="">
           </div>
       </div>
       <div class="details--other--project">
@@ -53,6 +53,10 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+// import components
 import Nav from "../components/Nav.vue"
 import Gasp from "../components/Projects/Gasp.vue"
 import Bush from "../components/Projects/Bush.vue"
@@ -65,7 +69,23 @@ components: {
     Bush,
     Both,
     Code
-}
+},
+ mounted() {
+    //  gsap.timeline()
+    //  .from('.details--intro--text h1', {
+    //      duration: 2,
+    //      css: {
+    //          fontStyle: 'normal',
+    //          fontWeight: 800,
+    //          fontSize: '477px',
+    //          lineHeight: '652px',
+    //          textAlign: 'center',
+    //          scale: 1.6
+    //           },
+    //           delay: 0.5
+    //  }),
+     window.scrollTo(0,0)
+ }
 }
 </script>
 
